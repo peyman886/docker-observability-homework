@@ -10,3 +10,7 @@ redis_data/
 
 # OS
 .DS_Store
+
+# Virtual environments
+.venv/
+venv/

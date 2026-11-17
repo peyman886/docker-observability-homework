@@ -1,8 +1,6 @@
-## 📄 README.md
+# Docker & Observability Homework
 
-# Docker & Observation Homework
-
-This projecapp/configst is part of the Docker and Observability homework.  
+This project is part of the Docker and Observability homework.  
 The goal was to take the sample **Flask + Redis** application, add a new Prometheus metric for cache misses, and visualize everything with **Prometheus** and **Grafana**.
 
 ---
@@ -10,8 +8,7 @@ The goal was to take the sample **Flask + Redis** application, add a new Prometh
 ## 📂 Project Structure
 
 ```
-
-docker-and-observation-hw/
+docker-observability-homework/
 ├── app/                 # Flask application and Docker setup
 │   ├── app.py
 │   ├── Dockerfile
@@ -25,8 +22,7 @@ docker-and-observation-hw/
 ├── .gitignore
 └── README.md
 
-````
-
+```
 ---
 
 ## ⚙️ How to Run
@@ -36,8 +32,7 @@ From inside the `app/` directory:
 
 ```bash
 docker compose up -d --build
-````
-
+```
 ### 2. Available services
 
 * **Flask App** → [http://localhost:9000](http://localhost:9000)
@@ -67,7 +62,6 @@ curl -i -X POST http://localhost:9000/items \
 # Cache hit
 curl -i http://localhost:9000/items/foo
 ```
-
 Prometheus will scrape these metrics from `/metrics`.
 
 ---
